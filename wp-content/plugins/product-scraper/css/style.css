@@ -1,0 +1,140 @@
+.woocommerce div.product p.stock {
+  display: none;
+}
+.ps-configurator-swatches {
+  margin: 20px 0;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+.ps-configurator-group {
+  margin-bottom: 20px;
+}
+.ps-group-label {
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: block;
+}
+.ps-swatch-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.ps-swatch {
+  cursor: pointer;
+  text-align: center;
+  padding: 8px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background: white;
+}
+.ps-swatch.selected {
+  border-color: #007cba;
+  box-shadow: 0 0 0 2px #007cba;
+}
+.ps-swatch-image {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+.ps-swatch-label {
+  display: block;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.ps-loading {
+  opacity: 0.5;
+  pointer-events: none;
+  position: relative;
+}
+.ps-loading:after {
+  content: "Loading...";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  z-index: 10;
+}
+
+.ps-config-select {
+  width: 100% !important;
+}
+.select2-container--classic .select2-selection--single {
+  height: 61px !important;
+  padding: 5px;
+  border-color: #ddd;
+}
+.select2-container--classic
+  .select2-selection--single
+  .select2-selection__rendered {
+  line-height: 34px;
+}
+.select2-container--classic
+  .select2-selection--single
+  .select2-selection__arrow {
+  height: 61px!important;
+  width: 40px!important;
+  top: 0!important;
+  right: 0!important;
+}
+.select2-container--classic .select2-search--dropdown .select2-search__field {
+  height: 49px!important;
+}
+.select2-container .select2-selection--single .select2-selection__arrow b {
+  top: 50%;
+  left: 0!important;
+  margin: -10px auto!important;
+  right: 1px;
+}
+.ps-option-with-image {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  font-size: 15px;
+  padding: 5px !important;
+}
+.ps-option-thumb {
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid #eee;
+}
+.ps-option-text {
+  flex: 1;
+}
+.ps-selected-image {
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+  border-radius: 3px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.ps-image-flash {
+  animation: ps-flash 0.3s ease-in-out;
+}
+@keyframes ps-flash {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.ps-config-select {
+  cursor: pointer;
+}
+.ps-first-group-select {
+  border-color: #007cba;
+  background-color: #fff;
+}
